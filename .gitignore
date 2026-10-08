@@ -28,6 +28,7 @@ wheels/
 .pytest_cache/
 reports/*.html
 reports/*.log
+reports/*.xml
 reports/screenshots/*.png
 reports/assets/
 test-results/
