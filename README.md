@@ -20,17 +20,13 @@ TestCase/
 ├── pages/
 │   ├── __init__.py
 │   ├── base_page.py                   # Thao tác Selenium dùng chung (POM Base)
-│   ├── utc_login_page.py              # Page Object trang đăng nhập UTC (có/không CAPTCHA)
-│   ├── login_page.py                  # Page Object đăng nhập SauceDemo
-│   └── inventory_page.py              # Page Object sản phẩm SauceDemo
+│   └── utc_login_page.py              # Page Object trang đăng nhập UTC (có/không CAPTCHA)
 ├── tests/
 │   ├── utc_login/                     # 26 file kiểm thử cho 26 test case UTC riêng biệt
 │   │   ├── conftest.py                # Fixture quản lý trạng thái form thường và CAPTCHA
 │   │   ├── test_neg_001_empty_fields.py
 │   │   ├── ...
 │   │   └── test_neg_026_plain_to_captcha_rejections.py
-│   ├── test_login.py                  # Test case mẫu SauceDemo
-│   ├── test_inventory.py              # Test case mẫu SauceDemo
 │   └── test_edge_browser.py           # Test case đóng/mở Microsoft Edge
 ├── docs/
 │   ├── utc_login_negative_test_cases.csv
@@ -120,12 +116,6 @@ Chạy bài test kiểm tra đóng mở trình duyệt Edge:
 .\.venv\Scripts\python.exe -m pytest tests/test_edge_browser.py
 # Hoặc chạy script trực tiếp:
 .\.venv\Scripts\python.exe open_close_edge.py
-```
-
-Chạy bộ test mẫu chức năng đăng nhập và sản phẩm SauceDemo:
-
-```powershell
-.\.venv\Scripts\python.exe -m pytest tests/test_login.py tests/test_inventory.py
 ```
 
 Chạy toàn bộ tất cả các test trong dự án:

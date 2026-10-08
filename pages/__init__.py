@@ -1,5 +1,4 @@
 from .base_page import BasePage
-from .login_page import LoginPage
-from .inventory_page import InventoryPage
+from .utc_login_page import UtcLoginPage
 
-__all__ = ["BasePage", "LoginPage", "InventoryPage"]
+__all__ = ["BasePage", "UtcLoginPage"]
